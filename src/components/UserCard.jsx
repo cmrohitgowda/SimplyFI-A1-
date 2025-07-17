@@ -27,7 +27,7 @@ export default function UserCard({ user }) {
         </div>
 
         <div className="col-md-9">
-          <div className="card-body h-80 p-3 pb-2">
+          <div className="card-body h-80 p-1">
             <h2 className="card-title mb-3">{name}</h2>
             <p className="card-text mb-1">
               <strong>Email:</strong> {email}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import UserCard from "./components/UserCard";
+import Loader from "./components/Loader";
 import "./App.css";
 
 export default function App() {
@@ -22,9 +23,7 @@ export default function App() {
   return (
     <div className="container mt-4">
       {loading ? (
-        <div className="d-flex justify-content-center">
-          <div className="spinner"></div>
-        </div>
+        <Loader />
       ) : (
         <div className="row">
           {users.map((user) => (

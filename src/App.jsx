@@ -27,10 +27,8 @@ export default function App() {
       ) : (
         <div className="row">
           {users.map((user) => (
-            <div className="col-13" key={user.id}>
-              <div className="mx-auto">
-                <UserCard user={user} />
-              </div>
+            <div key={user.id}>
+              <UserCard user={user} />
             </div>
           ))}
         </div>

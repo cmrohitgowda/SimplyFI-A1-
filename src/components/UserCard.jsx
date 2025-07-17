@@ -9,7 +9,7 @@ export default function UserCard({ user }) {
       style={{ maxWidth: "900px", margin: "20px auto", minHeight: "200px" }}
     >
       <div className="row g-0 align-items-stretch">
-        <div className="col-md-3 d-flex align-items-stretch">
+        <div className="col-md-3 align-items-stretch">
           <div className="w-80 d-flex">
             <img
               src={avatarUrl}
@@ -27,7 +27,7 @@ export default function UserCard({ user }) {
         </div>
 
         <div className="col-md-9">
-          <div className="card-body h-80 p-1">
+          <div className="card-body h-100 p-2">
             <h2 className="card-title mb-3">{name}</h2>
             <p className="card-text mb-1">
               <strong>Email:</strong> {email}
@@ -41,7 +41,7 @@ export default function UserCard({ user }) {
             <p className="card-text mb-1">
               <strong>Website:</strong> {website}
             </p>
-            <p className="card-text mb-0">
+            <p className="card-text mb-1">
               <strong>Address:</strong>{" "}
               {`${address.street}, ${address.suite}, ${address.city}, ${address.zipcode}`}
             </p>

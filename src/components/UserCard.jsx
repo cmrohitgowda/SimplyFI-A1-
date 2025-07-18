@@ -5,20 +5,22 @@ export default function UserCard({ user }) {
 
   return (
     <div
-      className="card shadow-sm bg-white"
+      className="card bg-white"
       style={{
-        maxWidth: "900px",
+        maxWidth: "1100px",
         margin: "20px auto",
-        minHeight: "200px",
+        height: "83%",
+        borderRadius: "0px",
+        boxShadow: "0 3px 6px rgba(0, 0, 0, 0.2)",
       }}
     >
       <div className="row g-0 align-items-stretch">
-        <div className="col-md-3 d-flex align-items-stretch">
-          <div className="w-100 d-flex">
+        <div className="col-md-2 d-flex align-items-stretch">
+          <div className="w-100% d-flex h-100%">
             <img
               src={avatarUrl}
               alt={username}
-              className="rounded-start img-fluid"
+              className="img-fluid"
               style={{
                 objectFit: "cover",
                 padding: "10px",
@@ -27,9 +29,9 @@ export default function UserCard({ user }) {
           </div>
         </div>
 
-        <div className="col-md-9">
+        <div className="col-md-9 lh-sm">
           <div className="card-body p-2">
-            <h2 className="card-title fs-4 fw-bold mb-3">{name}</h2>
+            <h2 className="card-title fs-4 mb-3">{name}</h2>
             <p className="card-text mb-1">
               <strong>Email:</strong> {email}
             </p>

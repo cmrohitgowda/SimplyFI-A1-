@@ -1,7 +1,7 @@
 export default function UserCard({ user }) {
   const { username, name, email, phone, website, address, company } = user;
 
-  const avatarUrl = `https://avatars.dicebear.com/v2/avataaars/${username}.svg?options[mood][]=happy`;
+  const avatarUrl = `https://api.dicebear.com/7.x/avataaars/svg?seed=${username}`;
 
   return (
     <div

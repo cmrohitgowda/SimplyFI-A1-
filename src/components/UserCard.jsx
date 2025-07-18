@@ -9,14 +9,13 @@ export default function UserCard({ user }) {
       style={{
         maxWidth: "1100px",
         margin: "20px auto",
-        height: "83%",
         borderRadius: "0px",
         boxShadow: "0 3px 6px rgba(0, 0, 0, 0.2)",
       }}
     >
-      <div className="row g-0 align-items-stretch">
-        <div className="col-md-2 d-flex align-items-stretch">
-          <div className="w-100% d-flex h-100%">
+      <div className="row g-0 ">
+        <div className="col-md-2  ">
+          <div className="w-100% d-flex">
             <img
               src={avatarUrl}
               alt={username}
